@@ -28,8 +28,11 @@ NOTICE Kodi 18 (Leia) is EOL and the add-on version for Kodi 18 is deprecated, w
 
 Install add-on via repository - provide automatic installation of updates:
 
-- [Mbebe Repository](https://github.com/mbebe/blomqvist/blob/master/repository.mbebe.zip)
+- [Mbebe Repository](https://mbebe.github.io/blomqvist/)
 
+Install add-on manually - updates should always be installed manually:
+
+- [plugin.video.ninateka](https://github.com/zuzia-dev/plugin.video.ninateka/archive/refs/tags/1.7.1.zip)
 
 
 ## DRM protected streams ##
@@ -55,3 +58,13 @@ Additional information can be found in the [Ninateka.pl](https://ninateka.pl/)
 
 This add-on is licensed under the **GNU GENERAL PUBLIC LICENSE Version 3**. Please see the [LICENSE.txt](LICENSE.txt) file for details.
 
+
+
+## Support the project ##
+
+Anyone who wishes to support the development of this project can participate in this ways
+Indirect contribution through a donation.
+
+If you wish to help, you can make a donation, click on this link https://github.com/mbebe/blomqvist/issues/39 to choose the method you like best.
+
+If you are a person skilled in Python development and has some knowledge of HTTP flow and Kodi enviroment, you can join as a developer and provide help to fix errors, make improvements, and make new features.
