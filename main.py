@@ -17,6 +17,7 @@ except ImportError:
 
     from urllib import urlencode
 
+import xbmc
 import xbmcgui
 import xbmcaddon
 import xbmcplugin
@@ -121,24 +122,27 @@ def home():
 
 def list_movies(xorigin):
     jsondata = get_url(apiurl + 'content', xorigin)
-    ccs = jsondata.get('content', None).get('items', None)
+
+    ccs = jsondata.get('content', {}).get('items')
+    list_view = jsondata.get('content', {}).get('listView')
     for cc in ccs:
 
-        if cc.get('items', None):
-            tytul = cc.get('header', None)
-            id = re.findall('(\d+)', cc.get('headerUrl', None))[-1]
-            urlk = apiurl + 'search?page=1&limit=48&__NodeTypeAlias.0=asset&__subCategory.2=' + str(
-                id) + '&sort_field.5=Ascending|' + xorigin
+        if cc.get('items'):
+            tytul = cc.get('header')
+            header_id = re.findall('(\\d+)', cc.get('headerUrl'))[-1] if cc.get('headerUrl') else ''
+            min = list_view['filters'][1]['value'].get('min')
+            max = list_view['filters'][1]['value'].get('max')
+            urlk = f'{apiurl}search?page=1&limit=48&field_searchable.0=yes&multiFilter.2={header_id}&parentID.4={str(min)},{str(max)}'
             add_item(urlk, tytul, '', True, "list_subcategories")
 
     xbmcplugin.endOfDirectory(addon_handle)
 
 
 def list_subcategories(url, pg):
-    urlk, xorigin = url.split('|')
-    urlk = re.sub('page=\d+\&', 'page=%d&' % int(pg), urlk)
+    # urlk, xorigin = url.split('|')
+    # urlk = re.sub('page=\d+\&', 'page=%d&' % int(pg), urlk)
 
-    jsondata = get_url(urlk, xorigin)
+    jsondata = get_url(url)
 
     records = jsondata.get('records', None)
     if records:
