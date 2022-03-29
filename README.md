@@ -1,4 +1,4 @@
-# Ninateka Video Plugin for Kodi 
+# Ninateka Plugin for Kodi (plugin.video.ninateka) #
 
 This is a Kodi add-on that allows you to stream content from Ninateka in Kodi.
 
@@ -54,17 +54,15 @@ Additional information can be found in the [Ninateka.pl](https://ninateka.pl/)
 
 
 
-## License ##
-
-This add-on is licensed under the **GNU GENERAL PUBLIC LICENSE Version 3**. Please see the [LICENSE.txt](LICENSE.txt) file for details.
-
-
-
 ## Support the project ##
 
 Anyone who wishes to support the development of this project can participate in this ways
-Indirect contribution through a donation.
+Indirect contribution through a donation. If you wish to help, you can make a donation, click on this link https://github.com/mbebe/blomqvist/issues/39 to choose the method you like best. If you are a person skilled in Python development, you can join as a developer and provide help to fix errors and make new features.
 
-If you wish to help, you can make a donation, click on this link https://github.com/mbebe/blomqvist/issues/39 to choose the method you like best.
 
-If you are a person skilled in Python development and has some knowledge of HTTP flow and Kodi enviroment, you can join as a developer and provide help to fix errors, make improvements, and make new features.
+
+## License ##
+
+This add-on is licensed under the **GNU GENERAL PUBLIC LICENSE Version 2**. Please see the [LICENSE.txt](LICENSE.txt) file for details.
+
+
