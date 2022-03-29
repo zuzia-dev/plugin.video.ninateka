@@ -172,7 +172,8 @@ def list_subcategories(url, pg):
             add_item(url, 'Nast. strona', '', True, "list_subcategories", page=int(pg) + 1)
         xbmcplugin.setContent(addon_handle, 'videos')
         xbmcplugin.endOfDirectory(addon_handle)
-
+    else:
+        xbmcgui.Dialog().notification('Informacja', 'Brak pozycji w tej kategorii.')
 
 def play_item(url):
     urlk, xorigin = url.split('|')
