@@ -2,6 +2,10 @@
 
 This is a Kodi add-on that allows you to stream content from Ninateka in Kodi.
 
+Ninateka is a free service with over 7000 selected audiovisual materials. You can watch feature films and documentaries of famous Polish artists, recordings of plays and concerts, animations, radio plays and interviews with interesting people. Run by the National Film Archive - Audiovisual Institute (FINA).
+
+Additional information can be found in the [Ninateka.pl](https://ninateka.pl/)
+
 
 
 ## Disclaimer ##
@@ -19,9 +23,6 @@ Any trademarks used belong to their owning companies & organisations.
  * InputStream Helper add-on
  * Widevine CDM library
  
-
-NOTICE Kodi 18 (Leia) is EOL and the add-on version for Kodi 18 is deprecated, we highly recommend upgrading to Kodi 19!
-
 
 
 ## Installation & Updates ##
@@ -50,14 +51,11 @@ For bugs, questions and discussions please use the  [GitHub Issues](https://gith
 
 
 
-Additional information can be found in the [Ninateka.pl](https://ninateka.pl/)
-
-
-
 ## Support the project ##
 
 Anyone who wishes to support the development of this project can participate in this ways
-Indirect contribution through a donation. If you wish to help, you can make a donation, click on this link https://github.com/mbebe/blomqvist/issues/39 to choose the method you like best. If you are a person skilled in Python development, you can join as a developer and provide help to fix errors and make new features.
+Indirect contribution through a donation. If you wish to help, you can make a donation, click on this link https://github.com/mbebe/blomqvist/issues/39 to choose the method you like best. 
+If you are a person skilled in Python development, you can join as a developer and provide help to fix errors and make new features.
 
 
 
